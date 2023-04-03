@@ -51,6 +51,7 @@
   },
   "scripts": {
     "preversion": "npm test",
+    "postinstall": "npm run build",
     "postversion": "git push && git push --tags",
     "clean": "rimraf dist",
     "lint": "eslint src/*.ts src/**/*.ts",
