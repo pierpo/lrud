@@ -7,9 +7,6 @@
   "types": "dist/types/index.d.ts",
   "homepage": "https://github.com/bbc/lrud",
   "license": "Apache-2.0",
-  "files": [
-    "dist"
-  ],
   "keywords": [
     "tv",
     "navigation",
