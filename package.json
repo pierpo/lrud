@@ -50,17 +50,17 @@
     "mitt": "^1.2.0"
   },
   "scripts": {
-    "preversion": "npm test",
-    "postinstall": "npm run build",
+    "preversion": "yarn test",
+    "postinstall": "yarn build",
     "postversion": "git push && git push --tags",
-    "clean": "rimraf dist",
-    "lint": "eslint src/*.ts src/**/*.ts",
-    "test": "npm run build && jest",
-    "test:verbose": "jest --verbose",
-    "test:coverage": "jest --coverage",
-    "prepare": "npm run build",
-    "prebuild": "npm run clean",
-    "build": "rollup -c",
-    "watch": "npm run build -- -w"
+    "clean": "yarn rimraf dist",
+    "lint": "yarn eslint src/*.ts src/**/*.ts",
+    "test": "yarn build && jest",
+    "test:verbose": "yarn jest --verbose",
+    "test:coverage": "yarn jest --coverage",
+    "prepare": "yarn build",
+    "prebuild": "yarn clean",
+    "build": "yarn rollup -c",
+    "watch": "yarn build -- -w"
   }
 }
